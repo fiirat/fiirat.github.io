@@ -115,7 +115,7 @@ body{
 
 .row h4{
     margin-bottom: 5px;
-    color: black;
+    color: var(--darkblue);
     font-weight: 900;
     font-size: 17px;  
 }
