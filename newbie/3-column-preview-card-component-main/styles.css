@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,200,300,regular,500,600,700,800,900);
+/* Reseting */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/* Variables */
+
+:root{
+    --brightorange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --transparentwhite-paragrapghs: hsla(0, 0%, 100%, 0.75);
+    --verylightgray: hsl(0, 0%, 95%);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-sedan{
+    background-color: var(--brightorange);
+    border-radius: 10px 0px 0px 10px;
+    max-height: 500px;
+}
+
+.section-suv{
+    background-color: var(--darkcyan);
+    max-height: 500px;
+}
+
+.section-luxury{
+    background-color: var(--verydarkcyan);
+    border-radius: 0px 10px 10px 0px;
+    max-height: 500px;
+}
+
+.content{
+    padding: 55px 65px 55px 55px;
+}
+
+.sec{
+    margin-bottom: 30px;
+}
+
+.title{
+    color: var(--verylightgray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text{
+    color: var(--transparentwhite-paragrapghs);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.btn{
+    width: 75%;
+    background-color: var(--verylightgray);
+    border: none;
+    padding: 13px;
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    color: var(--brightorange);
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.section-suv .btn{
+    color: var(--darkcyan);
+}
+
+.section-luxury .btn{
+    color: var(--verydarkcyan);
+}
+
+
+.attribution{
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    top: 95%;
+    font-size: 15px;
+}
+
+.attribution a{
+    color: var(--darkcyan);
+}
